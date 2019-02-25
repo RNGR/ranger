@@ -1,0 +1,210 @@
+// @import "./scss/_normalize.scss";
+@import "./_variables.scss";
+// @import "./scss/_fonts.scss";
+@import "./_type.scss";
+// @import "./scss/_base.scss";
+// @import "./scss/_modal.scss";
+// @import "./scss/_input.scss";
+// @import "./scss/_spacing.scss";
+// @import "./scss/_video.scss";
+
+// @import "./scss/_header.scss";
+// @import "./scss/_footer.scss";
+
+// @import "./scss/_card.scss";
+// @import "./scss/_requests.scss";
+// @import "./scss/_roadmap.scss";
+
+//////////////////////////////////////////////////////////////////////////////
+
+* {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Gotham HTF', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: $darkest-gray;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: $white;
+  margin-top: 80px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  transition: all $fast $transition;
+  text-decoration: none;
+}
+
+.container {
+  // scroll-snap-type: y mandatory;
+  // scroll-snap-type: y proximity;
+  overflow-x: hidden; // For device right scroll overflow
+}
+
+.max-width {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.max-width-small {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.buttons {
+  button,.button {
+    margin-right: $spacing-desktop;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &.full {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    button,.button {
+      flex-grow: 1;
+      width: calc((100% - 40px) / 2);
+    }
+  }
+}
+
+a.button {
+  padding-top: 7px;
+  &.outline {
+    padding-top: 5px;
+  }
+}
+
+button,.button {
+  border-radius: $border-radius;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  height: 40px;
+  padding: 0 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  &:hover {
+    //
+  }
+  &.blue {
+    background-color: $blue;
+    color: $white;
+  }
+  &.green {
+    background-color: $green;
+    color: $white;
+  }
+  &.yellow {
+    background-color: $yellow;
+    color: $white;
+  }
+  &.red {
+    background-color: $red;
+    color: $white;
+  }
+  &.outline {
+    border: solid 2px $blue;
+    color: $blue;
+    background-color: $white;
+    &.blue {
+      border: solid 2px $blue;
+      color: $blue;
+      background-color: $white;
+    }
+    &.green {
+      border: solid 2px $green;
+      color: $green;
+      background-color: $white;
+    }
+    &.yellow {
+      border: solid 2px $yellow;
+      color: $yellow;
+      background-color: $white;
+    }
+    &.red {
+      border: solid 2px $red;
+      color: $red;
+      background-color: $white;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid $lightest-gray;
+  margin: $spacing-desktop;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: $spacing-desktop;
+  & > div {
+    width: 50%;
+    padding: $spacing-desktop;
+    .icon {
+      position: relative;
+      height: 20px;
+      svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    h4 {
+      margin: 10px 0 10px;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.grid {
+  margin: ($spacing-desktop * 2) $spacing-desktop;
+  display: grid;
+  grid-gap: $spacing-desktop;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &.contact {
+    & > a {
+      text-align: center;
+      &:hover {
+        h4 {
+          color: $red;
+        }
+      }
+      h4 {
+        transition: all $fast $transition;
+        color: $gray;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Gotham HTF';
+  src: url('/fonts/GothamHTF-Book.woff2') format('woff2'),
+    url('/fonts/GothamHTF-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham HTF';
+  src: url('/fonts/GothamHTF-Bold.woff2') format('woff2'),
+    url('/fonts/GothamHTF-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham HTF';
+  src: url('/fonts/GothamHTF-Medium.woff2') format('woff2'),
+    url('/fonts/GothamHTF-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+::selection {
+  background: $blue;
+}
+
+.serif {
+  font-family: 'Neuton', serif;
+  font-weight: 300;
+}
+
+h2,
+.h2 {
+  font-family: 'Neuton', serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+  &.heading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: ($spacing-desktop * 2) 0 $spacing-desktop;
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 10px);
+      left: calc(50% - 30px);
+      height: 2px;
+      width: 60px;
+      background-color: $lighter-gray;
+    }
+  }
+}
+
+h3,
+.h3 {
+  font-family: 'Neuton', serif;
+  font-size: 28px;
+  line-height: 44px;
+  font-weight: 300;
+}
+
+h4,
+.h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  //
+}
+
+h6,
+.h6 {
+  color: $light-gray;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.red {
+  color: $red;
+}
