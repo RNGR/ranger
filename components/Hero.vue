@@ -33,7 +33,7 @@ export default {
     },
     cta: {
       type: String,
-      default: 'Get in Touch'
+      default: 'Let\'s Talk'
     },
     url: {
       type: String,
@@ -41,7 +41,7 @@ export default {
     },
     target: {
       type: String,
-      default: '_self'
+      default: '_blank'
     },
     image: {
       type: String,

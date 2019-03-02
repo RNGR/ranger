@@ -156,8 +156,83 @@
     <section class="max-width">
       <a name="opportunities" />
       <h2 class="heading">Opportunities</h2>
-      <div>
-        <h2>Design Intern</h2>
+      <div class="careers">
+        <div class="career">
+          <h3>Front-End Developer</h3>
+          We are looking for a motivated front-end web developer to join our growing team. Developers will be responsible for building web standards compliant code and work with back-end developers for integration. Be sure to include your resume and links to projects and/or portfolios when applying to this position.
+          <ul v-if="career1">
+            <li>3+ years experience in web development</li>
+            <li>Expert knowledge of HTML, CSS, Javascript, and Javascript frameworks</li>
+            <li>Working knowledge of developing for cross browser compatibility</li>
+            <li>Working experience with versioning control software (SVN, Git)</li>
+            <li>Familiarity with web standards and best practices</li>
+            <li>Familiarity with PHP, Wordpress, Drupal, or Python</li>
+            <li>Knowledge of Section 508 compliancy</li>
+            <li>Knowledge of SEO best practices</li>
+            <li>Effective communication skills</li>
+            <li>Ability to work and interact with project team</li>
+            <li>HTML5, CSS3, and mobile web experience a plus</li>
+          </ul>
+          <div class="links">
+            <span class="requirements" @click="toggleCareer1">Requirements</span> or <a href="mailto:jobs@rngr.org?subject=Internship">Apply</a>
+          </div>
+        </div>
+        <div class="career">
+          <h3>Back-End Developer</h3>
+          We are looking for a motivated PHP developer to join our growing team. Developers will be responsible for building websites to meet project specifications and expectations. Developers will work alongside interactive designers, front-end developers, and project managers. Be sure to include your resume and links to projects and/or portfolios when applying to this position.
+          <ul v-if="career2">
+            <li>3+ years experience in web development</li>
+            <li>Expert knowledge of PHP, HTML, CSS, Javascript, and Javascript frameworks</li>
+            <li>Expert knowledge of OOP concepts</li>
+            <li>Strong knowledge of MySQL and relational database design</li>
+            <li>Strong experience with open–source content management frameworks (Drupal, Wordpress, Directus)</li>
+            <li>Experience with management and maintenance of LAMP server environments</li>
+            <li>Effective communication skills</li>
+            <li>Ability to work and interact with project team</li>
+            <li>Excellent problem solving skills</li>
+            <li>Design experience a plus</li>
+            <li>Computer science degree preferred</li>
+          </ul>
+          <div class="links">
+            <span class="requirements" @click="toggleCareer2">Requirements</span> or <a href="mailto:jobs@rngr.org?subject=Internship">Apply</a>
+          </div>
+        </div>
+        <div class="career">
+          <h3>Interaction Designer</h3>
+          We are looking for a motivated interaction designer to join our growing team. Designers will be responsible for conceptualizing, creating, and refining interface solutions for websites and work alongside developers and project managers. Be sure to include your resume and links to projects and/or portfolios when applying to this position.
+          <ul v-if="career3">
+            <li>3+ years of interactive experience</li>
+            <li>Strong conceptual thinking</li>
+            <li>Excellent design and typography skills</li>
+            <li>The ability to follow a design brief and adhere to brand standards</li>
+            <li>Proven commercial experience in an interactive design position</li>
+            <li>Proficient in Sketch, Photoshop, Illustrator, and Indesign</li>
+            <li>Effective communication skills</li>
+            <li>Ability to work and interact with project team</li>
+            <li>HTML, CSS, and Javascript knowledge a plus</li>
+            <li>Duration is 3–4 months with the possibility of extension</li>
+          </ul>
+          <div class="links">
+            <span class="requirements" @click="toggleCareer3">Requirements</span> or <a href="mailto:jobs@rngr.org?subject=Internship">Apply</a>
+          </div>
+        </div>
+        <div class="career">
+          <h3>Internship</h3>
+          We are looking for passionate students looking to gain experience working on mid-sized web projects. Individuals would be responsible for aiding in the design and creation of websites and would work alongside RANGER designers, developers, and project managers. Be sure to include your resume and links to projects and/or portfolios when applying to this position.
+          <ul v-if="career4">
+            <li>Exceptional portfolio</li>
+            <li>Strong conceptual thinking</li>
+            <li>Design: Outstanding design and typography skills</li>
+            <li>Dev: Outstanding PHP, MySQL, HTML, CSS, and/or JS knowledge</li>
+            <li>The ability to follow a design brief and adhere to brand standards</li>
+            <li>Proficient in Sketch, Photoshop, Illustrator, and Indesign</li>
+            <li>Effective communication skills</li>
+            <li>Ability to work and interact with project team</li>
+          </ul>
+          <div class="links">
+            <span class="requirements" @click="toggleCareer4">Requirements</span> or <a href="mailto:jobs@rngr.org?subject=Internship">Apply</a>
+          </div>
+        </div>
       </div>
     </section>
     <hr />
@@ -192,10 +267,61 @@ export default {
     Break,
     Idea,
     Quote
+  },
+  data() {
+    return {
+      career1: false,
+      career2: false,
+      career3: false,
+      career4: false
+    }
+  },
+  methods: {
+    toggleCareer1() {
+      this.career1 = !this.career1;
+    },
+    toggleCareer2() {
+      this.career2 = !this.career2;
+    },
+    toggleCareer3() {
+      this.career3 = !this.career3;
+    },
+    toggleCareer4() {
+      this.career4 = !this.career4;
+    }
   }
 }
 </script>
 
 <style lang="scss">
 @import '~assets/scss/main.scss';
+
+.careers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 $spacing-desktop $spacing-desktop;
+  .career {
+    width: calc((100% - 40px) / 2);
+    padding: $spacing-desktop;
+    h3 {
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 20px 0 0 0;
+      font-size: 14px;
+      color: $gray;
+    }
+    .links {
+      margin-top: 20px;
+      .requirements {
+        cursor: pointer;
+        color: $red;
+      }
+      a {
+        color: $red;
+      }
+    }
+  }
+}
 </style>
