@@ -20,7 +20,7 @@
     </div>
     <section>
       <div class="max-width">
-        <logo color="lighter-gray" />
+        <a href="/"><logo color="lighter-gray" /></a>
         <div>© 2011-2019 RANGER Studio LLC</div>
       </div>
     </section>

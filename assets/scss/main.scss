@@ -127,6 +127,17 @@ button,.button {
     background-color: $red;
     color: $white;
   }
+  &.black {
+    background-color: $darkest-gray;
+    color: $white;
+  }
+  &.gray {
+    background-color: $light-gray;
+    color: $white;
+  }
+  &.full {
+    width: 100%;
+  }
   &.outline {
     border: solid 2px $blue;
     color: $blue;
@@ -149,6 +160,16 @@ button,.button {
     &.red {
       border: solid 2px $red;
       color: $red;
+      background-color: $white;
+    }
+    &.black {
+      border: solid 2px $darkest-gray;
+      color: $darkest-gray;
+      background-color: $white;
+    }
+    &.gray {
+      border: solid 2px $light-gray;
+      color: $light-gray;
       background-color: $white;
     }
   }

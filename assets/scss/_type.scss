@@ -23,7 +23,7 @@
 }
 
 ::selection {
-  background: $blue;
+  background: #81CDF2;
 }
 
 .serif {
@@ -55,7 +55,8 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+blockquote {
   font-family: 'Neuton', serif;
   font-size: 28px;
   line-height: 44px;
@@ -92,4 +93,8 @@ h6,
 
 .red {
   color: $red;
+}
+
+.gray {
+  color: $gray;
 }

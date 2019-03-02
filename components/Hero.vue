@@ -21,15 +21,15 @@ export default {
     },
     category: {
       type: String,
-      default: 'Loading...'
+      default: 'Welcome'
     },
     title: {
       type: String,
-      default: 'Loading...'
+      default: ''
     },
     subtitle: {
       type: String,
-      default: 'Loading...'
+      default: ''
     },
     cta: {
       type: String,
@@ -37,7 +37,7 @@ export default {
     },
     url: {
       type: String,
-      default: '/'
+      default: 'mailto:info@rangerstudio.com'
     },
     target: {
       type: String,

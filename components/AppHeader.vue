@@ -17,9 +17,12 @@
     <div class="fade" :style="{ opacity: opacity }"></div>
     <div class="menu">
       <div>
-        <svg class="close" @click="toggleMenu" width="27" height="28" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.44 12.59L25.46.56l1.41 1.42L14.85 14l12.02 12.02-1.41 1.42L13.44 15.4 1.4 27.44 0 26.02 12.02 14 0 1.98 1.41.56 13.44 12.6z" fill="#FFF" fill-rule="evenodd"/>
-        </svg>
+        <div class="close">
+          <svg @click="toggleMenu" width="27" height="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.44 12.59L25.46.56l1.41 1.42L14.85 14l12.02 12.02-1.41 1.42L13.44 15.4 1.4 27.44 0 26.02 12.02 14 0 1.98 1.41.56 13.44 12.6z" fill="#FFF" fill-rule="evenodd"/>
+          </svg>
+          <div class="esc">ESC</div>
+        </div>
         <a class="h2 welcome" href="/" :class="{'active': color == 'blue'}">Welcome</a><br>
         <a class="h2 work" href="/work" :class="{'active': color == 'green'}">Our Work</a><br>
         <a class="h2 ideas" href="/ideas" :class="{'active': color == 'yellow'}">Our Ideas</a><br>
@@ -117,6 +120,11 @@ header {
     .max-width .menu-toggle .breadcrumb {
       opacity: 1;
     }
+    .menu {
+      .close {
+        top: 0;
+      }
+    }
   }
   &.open {
     .menu {
@@ -192,14 +200,29 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#00263238',GradientType=1 );
     .close {
       position: absolute;
-      top: 27px;
+      top: 10px;
       left: $spacing-desktop;
       cursor: pointer;
-      &:hover path {
-        fill: $light-gray;
-      }
-      path {
+      svg path {
         transition: all $fast $transition;
+      }
+      .esc {
+        transition: all $fast $transition;
+        position: absolute;
+        top: 17px;
+        left: $spacing-desktop;
+        color: $white;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.25;
+      }
+      &:hover {
+        // svg path {
+        //   fill: $light-gray;
+        // }
+        .esc {
+          opacity: 1;
+        }
       }
     }
     a {
