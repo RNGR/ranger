@@ -28,7 +28,7 @@
         <a class="h2 ideas" href="/ideas" :class="{'active': color == 'yellow'}">Our Ideas</a><br>
         <a class="h2 agency" href="/agency" :class="{'active': color == 'red'}">Our Agency</a><br>
         <a class="h4" href="mailto:info@rangerstudio.com" target="_blank">info@rangerstudio.com</a><br>
-        <a class="h4" href="https://twitter.com/directus" target="_blank">
+        <a class="h4" href="https://twitter.com/ranger" target="_blank">
           <svg width="24" height="21" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.65 5.51l.06.9-.87-.1a13.88 13.88 0 0 1-8.26-4.25L1.44.86l-.3.88a5.46 5.46 0 0 0 1.08 5.42c.7.77.54.88-.66.42-.42-.15-.78-.25-.81-.2-.13.13.29 1.8.62 2.45a5.71 5.71 0 0 0 2.38 2.34l.85.42-1.01.02c-.97 0-1 .02-.9.4.34 1.2 1.71 2.46 3.24 3l1.08.39-.94.59a9.45 9.45 0 0 1-4.65 1.35c-.78.02-1.42.1-1.42.15 0 .18 2.12 1.2 3.35 1.6a14.1 14.1 0 0 0 11.37-1.35 15.74 15.74 0 0 0 5.78-7.1 19.6 19.6 0 0 0 1.18-5.49c0-.84.05-.95 1.02-1.95a11.8 11.8 0 0 0 1.21-1.41c.18-.35.16-.35-.72-.04-1.48.55-1.69.48-.96-.35A5.37 5.37 0 0 0 23.41.45c0-.06-.26.03-.55.2-.32.18-1.01.45-1.53.62l-.94.31-.85-.6a6.95 6.95 0 0 0-1.47-.8 5.68 5.68 0 0 0-3.04.06 5.24 5.24 0 0 0-3.38 5.27s-.15-2.32 0 0z" fill="#FFF" fill-rule="evenodd"/>
           </svg>

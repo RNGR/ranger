@@ -1,22 +1,42 @@
 <template>
   <footer>
-    <div class="contact max-width">
-      <div>
-        <h4>Welcome</h4>
+    <div class="pages max-width">
+      <a href="/">
+        <h4>
+          Welcome
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#039BE5" d="M8 0l8 8-8 8-1.4-1.4L12.2 9H0V7h12.2L6.6 1.4z" fill-rule="evenodd"/>
+          </svg>
+        </h4>
         <p>We're a full-service digital agency based out of Brooklyn. This page gives an overview of what's going on at RANGER.</p>
-      </div>
-      <div>
-        <h4>Our Work</h4>
+      </a>
+      <a href="/work">
+        <h4>
+          Our Work
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#4caf50" d="M8 0l8 8-8 8-1.4-1.4L12.2 9H0V7h12.2L6.6 1.4z" fill-rule="evenodd"/>
+          </svg>
+        </h4>
         <p>Our clients and case-studies are extremely diverse, however many are confidential and can not be displayed on this site.</p>
-      </div>
-      <div>
-        <h4>Our Ideas</h4>
+      </a>
+      <a href="/ideas">
+        <h4>
+          Our Ideas
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ff9800" d="M8 0l8 8-8 8-1.4-1.4L12.2 9H0V7h12.2L6.6 1.4z" fill-rule="evenodd"/>
+          </svg>
+        </h4>
         <p>Creative agencies should always be generating. This page is a collection of our various articles, ideation, and press.</p>
-      </div>
-      <div>
-        <h4>Our Agency</h4>
+      </a>
+      <a href="/agency">
+        <h4>
+          Our Agency
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#f44336" d="M8 0l8 8-8 8-1.4-1.4L12.2 9H0V7h12.2L6.6 1.4z" fill-rule="evenodd"/>
+          </svg>
+        </h4>
         <p>We specialize in projects requiring innovative design, bleeding-edge technologies, and complex data modeling.</p>
-      </div>
+      </a>
     </div>
     <section>
       <div class="max-width">
@@ -43,14 +63,31 @@ export default {
 
 footer {
   margin-top: $spacing-desktop * 4;
-  .contact {
+  .pages {
     display: flex;
     justify-content: space-between;
     padding: 0 $spacing-desktop;
-    & > div {
+    & > a {
       border-top: 2px solid $blue;
       width: calc((100% - 120px) / 4);
       padding: 40px 0 80px;
+      cursor: pointer;
+      h4 {
+        svg {
+          transition: all $fast $transition;
+          display: inline-block;
+          line-height: 20px;
+          vertical-align: middle;
+          margin-top: -3px;
+          opacity: 0;
+        }
+      }
+      &:hover {
+        svg {
+          opacity: 1;
+          margin-left: 6px;
+        }
+      }
       p {
         color: $gray;
         margin-top: 20px;
