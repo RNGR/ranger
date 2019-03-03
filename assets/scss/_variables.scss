@@ -26,9 +26,34 @@ $green: #4caf50;
 $yellow: #ff9800;
 $red: #f44336;
 
-$breakpoint-small: 600px;
-$breakpoint-medium: 800px;
-$breakpoint-large: 1000px;
-$breakpoint-extra-large: 1200px;
+$breakpoint-xs: 400px;
+$breakpoint-s: 600px;
+$breakpoint-m: 800px;
+$breakpoint-l: 1000px;
+$breakpoint-xl: 1200px;
 
 $spacing-desktop: 40px;
+
+:root {
+  --spacing-desktop-s: 40px;
+  --spacing-desktop-2-s: 80px;
+  --spacing-desktop-3-s: 120px;
+  --spacing-desktop-4-s: 160px;
+
+  --spacing-desktop: 40px;
+  --spacing-desktop-2: 80px;
+  --spacing-desktop-3: 120px;
+  --spacing-desktop-4: 160px;
+  @media (max-width: $breakpoint-m) {
+    --spacing-desktop: 30px;
+    --spacing-desktop-2: 60px;
+    --spacing-desktop-3: 90px;
+    --spacing-desktop-4: 120px;
+  }
+  @media (max-width: $breakpoint-s) {
+    --spacing-desktop: 20px;
+    --spacing-desktop-2: 40px;
+    --spacing-desktop-3: 60px;
+    --spacing-desktop-4: 80px;
+  }
+}

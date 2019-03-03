@@ -100,7 +100,7 @@ export default {
   align-items: center;
   height: 50vw;
   max-height: 680px;
-  margin: ($spacing-desktop * 2) 0 ($spacing-desktop * 3);
+  margin: var(--spacing-desktop-2) 0 var(--spacing-desktop-3);
   &.reverse {
     flex-direction: row-reverse;
     .device {
@@ -114,9 +114,9 @@ export default {
   }
   .description {
     width: 50%;
-    padding: $spacing-desktop;
+    padding: var(--spacing-desktop);
     p {
-      margin: $spacing-desktop 0;
+      margin: var(--spacing-desktop) 0;
     }
     .max-width {
       max-width: 600px;
@@ -139,6 +139,15 @@ export default {
       top: 0;
       height: 100%;
       z-index: 1;
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    flex-wrap: wrap;
+    max-height: auto;
+    height: auto;
+    .description,
+    .device {
+      width: 100%;
     }
   }
 }

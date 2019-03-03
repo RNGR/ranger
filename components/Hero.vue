@@ -57,15 +57,16 @@ export default {
 .hero {
   position: relative;
   height: calc(100vh - 120px);
-  padding: 0 $spacing-desktop;
-  margin-bottom: $spacing-desktop;
+  padding: 0 var(--spacing-desktop);
+  margin-bottom: var(--spacing-desktop);
   overflow: hidden;
   .background {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: $spacing-desktop;
+    padding: var(--spacing-desktop);
     background-color: $darkest-gray;
+    overflow: hidden;
     .info {
       max-width: 800px;
       z-index: 2;
@@ -76,12 +77,12 @@ export default {
         color: $white;
       }
       h6 {
-        margin-top: $spacing-desktop;
+        margin-top: var(--spacing-desktop-s);
         max-width: 600px;
       }
       a.button {
         display: block;
-        margin-top: $spacing-desktop;
+        margin-top: var(--spacing-desktop-s);
         width: 240px;
       }
     }
@@ -92,6 +93,17 @@ export default {
       height: 80%;
       z-index: 1;
       opacity: 0.5;
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    padding: 0 !important;
+    height: calc(100vh - 80px);
+    .background {
+      .info {
+        h6 {
+          max-width: auto;
+        }
+      }
     }
   }
 }

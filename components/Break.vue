@@ -60,7 +60,7 @@ export default {
   background-color: $darkest-gray;
   color: $white;
   align-items: center;
-  margin-top: $spacing-desktop * 2;
+  margin-top: var(--spacing-desktop-2);
   &.reverse {
     flex-direction: row-reverse;
     .description {
@@ -77,7 +77,7 @@ export default {
   }
   .description {
     width: 50%;
-    padding: $spacing-desktop;
+    padding: var(--spacing-desktop-s) var(--spacing-desktop);
     display: flex;
     justify-content: flex-end;
     .max-width-half {
@@ -86,15 +86,35 @@ export default {
         //
       }
       h3 {
-        margin: 4px 0 $spacing-desktop;
+        margin: 4px 0 var(--spacing-desktop-s);
         color: $light-gray;
         line-height: 36px;
       }
       p {
-        margin-bottom: $spacing-desktop;
+        margin-bottom: var(--spacing-desktop-s);
       }
       a {
         text-decoration: none;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+    .image {
+      width: 100%;
+      height: 100vw;
+    }
+    .description {
+      width: 100%;
+      .max-width-half {
+        h3 {
+          margin-top: 20px;
+          line-height: 32px;
+        }
       }
     }
   }

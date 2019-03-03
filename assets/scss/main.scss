@@ -40,6 +40,10 @@ html {
   box-sizing: border-box;
   background-color: $white;
   margin-top: 80px;
+  @media (max-width: $breakpoint-m) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 *,
@@ -72,7 +76,7 @@ a {
 
 .buttons {
   button,.button {
-    margin-right: $spacing-desktop;
+    margin-right: var(--spacing-desktop);
     &:last-of-type {
       margin-right: 0;
     }
@@ -85,6 +89,13 @@ a {
       flex-grow: 1;
       width: calc((100% - 40px) / 2);
     }
+    @media (max-width: $breakpoint-m) {
+      flex-wrap: wrap;
+      button,.button {
+        width: 100%;
+        margin: 0 0 20px;
+      }
+    }
   }
 }
 
@@ -92,6 +103,12 @@ a.button {
   padding-top: 7px;
   &.outline {
     padding-top: 5px;
+  }
+  @media (max-width: $breakpoint-m) {
+    padding-top: 8px;
+    &.outline {
+      padding-top: 6px;
+    }
   }
 }
 
@@ -178,7 +195,7 @@ button,.button {
 hr {
   border: 0;
   border-top: 2px solid $lightest-gray;
-  margin: $spacing-desktop;
+  margin: var(--spacing-desktop-s) var(--spacing-desktop);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -186,10 +203,10 @@ hr {
 .text {
   display: flex;
   flex-wrap: wrap;
-  margin: $spacing-desktop;
+  margin: var(--spacing-desktop);
   & > div {
     width: 50%;
-    padding: $spacing-desktop;
+    padding: var(--spacing-desktop);
     .icon {
       position: relative;
       height: 20px;
@@ -202,15 +219,18 @@ hr {
     h4 {
       margin: 10px 0 10px;
     }
+    @media (max-width: $breakpoint-m) {
+      width: 100%;
+    }
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 .grid {
-  margin: ($spacing-desktop * 2) $spacing-desktop;
+  margin: var(--spacing-desktop-2) var(--spacing-desktop);
   display: grid;
-  grid-gap: $spacing-desktop;
+  grid-gap: var(--spacing-desktop);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   &.contact {
     & > a {
@@ -225,6 +245,9 @@ hr {
         color: $gray;
       }
     }
+  }
+  @media (max-width: $breakpoint-m) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

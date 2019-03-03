@@ -52,15 +52,15 @@ export default {
 @import '~assets/scss/main.scss';
 
 .quote {
-  margin: ($spacing-desktop * 4) auto;
-  padding: $spacing-desktop;
+  margin: var(--spacing-desktop-4) auto;
+  padding: var(--spacing-desktop);
   max-width: 840px;
   h3 {
     text-indent: -0.4em;
   }
   .title {
     font-weight: 500;
-    margin-top: $spacing-desktop;
+    margin-top: var(--spacing-desktop);
   }
   .subtitle {
     color: $light-gray;

@@ -41,7 +41,7 @@
     <section>
       <div class="max-width">
         <a href="/"><logo color="lighter-gray" /></a>
-        <div>© 2011-2019 RANGER Studio LLC</div>
+        <div>©2019 RANGER Studio LLC</div>
       </div>
     </section>
   </footer>
@@ -62,11 +62,11 @@ export default {
 @import '~assets/scss/main.scss';
 
 footer {
-  margin-top: $spacing-desktop * 4;
+  margin-top: var(--spacing-desktop-4);
   .pages {
     display: flex;
     justify-content: space-between;
-    padding: 0 $spacing-desktop;
+    padding: 0 var(--spacing-desktop);
     & > a {
       border-top: 2px solid $blue;
       width: calc((100% - 120px) / 4);
@@ -105,13 +105,19 @@ footer {
         border-color: $red;
       }
     }
+    @media (max-width: $breakpoint-m) {
+      flex-wrap: wrap;
+      & > a {
+        width: calc((100% - 40px) / 2);
+      }
+    }
   }
   section {
     background-color: $off-white;
     color: $lighter-gray;
     & > div {
       height: 60px;
-      padding: 0 $spacing-desktop;
+      padding: 0 var(--spacing-desktop);
       display: flex;
       justify-content: space-between;
       align-items: center;

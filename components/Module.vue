@@ -151,5 +151,13 @@ export default {
       text-overflow: ellipsis;
     }
   }
+  @media (max-width: $breakpoint-m) {
+    &:after {
+      padding-bottom: calc(100% + 45px);
+    }
+    .image {
+      bottom: 45px;
+    }
+  }
 }
 </style>

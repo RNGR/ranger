@@ -311,6 +311,7 @@ export default {
       margin: 20px 0 0 0;
       font-size: 14px;
       color: $gray;
+      padding-left: 20px;
     }
     .links {
       margin-top: 20px;
@@ -321,6 +322,12 @@ export default {
       a {
         color: $red;
       }
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    .career {
+      width: 100%;
+      padding: $spacing-desktop 0;
     }
   }
 }

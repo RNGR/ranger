@@ -141,7 +141,7 @@ header {
   .max-width {
     transition: height $slow $transition;
     height: 80px;
-    padding: 0 $spacing-desktop;
+    padding: 0 var(--spacing-desktop);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +178,7 @@ header {
       }
       .breadcrumb {
         transition: opacity $slow $transition;
-        margin-left: $spacing-desktop;
+        margin-left: var(--spacing-desktop);
         opacity: 0;
       }
     }
@@ -193,7 +193,7 @@ header {
     z-index: 11;
     color: $white;
     line-height: 80px;
-    padding: 120px $spacing-desktop;
+    padding: 120px var(--spacing-desktop);
     background: -moz-linear-gradient(left, rgba(38,50,56,1) 0%, rgba(38,50,56,1) 1%, rgba(38,50,56,0) 100%);
     background: -webkit-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,1) 1%,rgba(38,50,56,0) 100%);
     background: linear-gradient(to right, rgba(38,50,56,1) 0%,rgba(38,50,56,1) 1%,rgba(38,50,56,0) 100%);
@@ -201,7 +201,7 @@ header {
     .close {
       position: absolute;
       top: 10px;
-      left: $spacing-desktop;
+      left: var(--spacing-desktop);
       cursor: pointer;
       svg path {
         transition: all $fast $transition;
@@ -210,7 +210,7 @@ header {
         transition: all $fast $transition;
         position: absolute;
         top: 17px;
-        left: $spacing-desktop;
+        left: var(--spacing-desktop);
         color: $white;
         font-weight: 500;
         line-height: 26px;

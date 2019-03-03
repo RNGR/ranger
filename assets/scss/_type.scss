@@ -41,7 +41,7 @@ h2,
     position: relative;
     width: 100%;
     text-align: center;
-    margin: ($spacing-desktop * 2) 0 $spacing-desktop;
+    margin: var(--spacing-desktop-2-s) 0 var(--spacing-desktop-s);
     &:after {
       content: "";
       position: absolute;
@@ -97,4 +97,22 @@ h6,
 
 .gray {
   color: $gray;
+}
+
+@media (max-width: $breakpoint-m) {
+  h2,
+  .h2 {
+    font-size: 36px;
+    line-height: 44px;
+    &.heading {
+      margin: 80px 0 var(--spacing-desktop);
+    }
+  }
+
+  h3,
+  .h3,
+  blockquote {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }

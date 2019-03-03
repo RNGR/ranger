@@ -43,7 +43,7 @@ export default {
 
 .idea {
   position: relative;
-  margin: $spacing-desktop;
+  margin: var(--spacing-desktop);
   .image {
     position: absolute;
     top: 0;
@@ -53,14 +53,30 @@ export default {
     background-color: $lightest-gray;
   }
   .description {
-    padding: $spacing-desktop;
+    padding: var(--spacing-desktop);
     margin-left: calc((100% - 120px) / 4);
     max-width: 800px;
     p {
-      margin: $spacing-desktop 0;
+      margin: var(--spacing-desktop) 0;
     }
     a {
       text-decoration: none;
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    margin: var(--spacing-desktop-s) 0;
+    .image {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      width: 100%;
+      padding-bottom: 50%;
+    }
+    .description {
+      padding: var(--spacing-desktop);
+      margin-left: 0;
+      max-width: auto;
     }
   }
 }
