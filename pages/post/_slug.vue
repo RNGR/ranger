@@ -11,28 +11,77 @@
     <section class="post max-width-small">
       <div class="header">
         <h4 id="hero-title">Article</h4>
-        <h2>The Future of Agnostic Data</h2>
-        <h6>By Ben Haynes — via <a href="#">Forbes</a></h6>
+        <h2>What Can Your CMS Do For You?</h2>
+        <h6>By Ben Haynes — via <a href="https://www.forbes.com/sites/forbestechcouncil/2017/12/05/what-can-your-cms-do-for-you">Forbes</a></h6>
       </div>
       <article>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget venenatis neque, euismod fermentum velit. Nulla tincidunt enim nisl, ac lacinia leo euismod eget. Proin at lacinia tellus. <a href="#">Vestibulum</a> id nibh pulvinar, blandit metus a, pulvinar leo. Pellentesque nibh libero, suscipit sed felis eu, euismod ornare purus. Phasellus at euismod ex. Maecenas sollicitudin, diam vitae sodales vulputate, nunc risus mattis augue, malesuada bibendum purus eros at leo. Duis elit eros, condimentum id commodo ut, iaculis id nisl. Quisque quis tortor magna. In hac habitasse platea dictumst.
+          Rod Tosten, VP of information technology at Gettysburg College, <a href="https://www.cmscritic.com/how-the-internet-of-things-is-shifting-the-way-we-think-about-content/" target="_blank">encountered</a> a challenge he would never have anticipated: Students requesting the ability to ask Alexa about the campus dining menu. So Tosten and his team went to work and built an Alexa skill that tells students what's on the menu, hours of operation for dining halls and more. They then built additional skills that could communicate other content such as phone numbers and campus news.
         </p>
+        <p>
+          That’s the thing with the internet of things: It’s turning our world upside down and forcing us to think of content across all platforms and devices in entirely different ways.
+        </p>
+        <p>
+          How do technologists brace for something they know is imminent yet still unknown?
+        </p>
+        <p>
+          It boils down to two fundamental directions: Build it yourself or use an off-the-shelf solution. We typically choose the latter because we’re busy and don't want to reinvent the wheel. We don’t make our own clothes or build our own cars, for instance.
+        </p>
+        <p>
+          Sounds sensible, but when it comes to IT professionals managing content over the next decade, the off-the-shelf approach can be shortsighted and unsustainable. Internet users already <a href="https://www.marketingprofs.com/charts/2017/32531/the-incredible-amount-of-data-generated-online-every-minute-infographic" target="_blank">produce</a> 2.5 quintillion bytes of content every day. As IoT picks up, forget about it — just imagine how much data will be generated once more than <a href="http://www.gartner.com/newsroom/id/3598917" target="_blank">20 billion connected devices</a> become content hubs by 2020. How is your cookie-cutter infrastructure suppose to handle all of that?
+        </p>
+        <p>
+          Today’s typical content management systems (CMS) serve as good solutions for simple websites, but we’re moving into a post-mobile world, so staying anchored to website-only management will become a major handicap in this emerging environment. Instead, building a more custom solution gives you a better chance to blaze your own path and future-proof your content through uncharted territory. And by utilizing proven frameworks and libraries as building blocks, you can avoid the time and costs associated with a ground-up build.
+        </p>
+
+        <h3>Avoid Rigid CMS Systems</h3>
+
+        <p>
+          One of the reasons that off-the-shelf solutions remain popular is that there is still a dearth of deep developer talent in the market. WordPress and Drupal sustain their dominance because experienced developers are expensive and hard to find, while less experienced developers familiar with these systems are more readily available.
+        </p>
+        <p>
+          So for companies trying to build platforms without breaking the bank, staying within a rigid system like those makes a certain degree of sense — and the larger these systems get, the larger the draw. In 2017, some <a href="https://premium.wpmudev.org/blog/wordpress-stats-facts/" target="_blank">28.6%</a> of all the websites on the internet use WordPress, for instance.
+        </p>
+        <p>
+          But while using traditional solutions may be easier to hire developers for, there are significant downsides, too.
+        </p>
+        <p>
+          First, content management systems are siloed from the rest of a company’s data. That will become a major hindrance when IoT takes off and devices require a broader range of content than just rich text and images. Consider the different types of content that will be pushed to appliances, public kiosks and other platforms yet to emerge.
+        </p>
+        <p>
+          Second, current CMSs are built to <i>publish</i> content, but these new touch points will <i>generate</i> content, too. The CMS of the future will need to ingest that data as well.
+        </p>
+        <p>
+          Finally, while traditional CMSs make it easy to choose a design from their template library, this feature is limited to websites. All of the various IoT devices will have unique ways of displaying content — therefore, content needs to be platform-agnostic and decoupled from design.
+        </p>
+        <blockquote>“Today’s typical content management systems (CMS) serve as good solutions for simple websites, but we’re moving into a post-mobile world, so staying anchored to website-only management will become a major handicap in this emerging environment.”</blockquote>
+        <p>
+          To resolve these issues, the better approach is to use one centralized system for managing all your multi-platform content, storing everything in a pure, agnostic way.
+        </p>
+        <p>
+          That’s not an option for everyone. If you know that you will only have a website and won’t be expanding into other content distribution vehicles like apps or kiosks, then it’s possible to get the most out of a CMS that's already in place. This saves time and money by leveraging existing developers and avoiding costly staff retention rates. Some traditional CMSs are also adding APIs so they can stay relevant in the headless world, but these solutions aren’t API-centric because they are literally building the API last. Many firms may assume that “if it ain’t broke, don’t fix it,” and that calculation may pay off. It’s a risk, though, since they are growing a technical debt that may be more difficult to overcome if their requirements change in three to five years.
+        </p>
+
+        <h3>Keep Your Language Options Open</h3>
+
+        <p>
+          To properly build more custom solutions means deciding on a tech stack and getting deeper into the actual code. Developers often have specific reasons for choosing a project's languages and libraries (e.g., it’s faster or better suited for large amounts of data). For more dynamic projects, that reasoning may change over time, requiring a future port to different languages.
+        </p>
+        <p>
+          But for most CMSs, you have to use <i>their</i> language. Even if you only plan on building a single website, you’re very much tied to one language and one way of doing things. When you decouple your project from the traditional CMS model, you drastically increase your development, workflow and creative options.
+        </p>
+
+        <h3>The Road Less Traveled</h3>
+
+        <p>
+          The only way to really prepare for the future, then, is to give yourself as many options as possible. That means breaking free of traditional tools and building out a more tailored solution. For many businesses, that’s a tougher road, especially when talented programmers are so hard to find. But it’s the better approach for the long haul.
+        </p>
+
+        <!--
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/qQZIHrMnDdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p>
-          Proin at lacinia tellus. Vestibulum id nibh pulvinar, blandit metus a, pulvinar leo. Pellentesque nibh libero, suscipit sed felis eu, euismod ornare purus. Phasellus at euismod ex. Maecenas sollicitudin, diam vitae sodales vulputate, nunc risus mattis augue, malesuada bibendum purus eros at leo. Duis elit eros, condimentum id commodo ut, iaculis id nisl. Quisque quis tortor magna. In hac habitasse platea dictumst. Etiam consectetur enim vitae placerat dictum.
-        </p>
-        <blockquote>
-          Phasellus at euismod ex. Nulla tincidunt enim nisl, ac lacinia leo euismod eget. Maecenas sollicitudin, diam vitae sodales vulputate, nunc risus mattis augue, malesuada at leo.
-        </blockquote>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget venenatis neque, euismod fermentum velit. Nulla tincidunt enim nisl, ac lacinia leo euismod eget. Proin at lacinia tellus. Vestibulum id nibh pulvinar, blandit metus a, pulvinar leo. Pellentesque nibh libero, suscipit sed felis eu, euismod ornare purus. Phasellus at euismod ex. Maecenas sollicitudin, diam vitae sodales vulputate, nunc risus mattis augue, malesuada bibendum purus eros at leo. Duis elit eros, condimentum id commodo ut, iaculis id nisl. Quisque quis tortor magna. In hac habitasse platea dictumst.
-        </p>
-        <p>
-          Proin at lacinia tellus. Vestibulum id nibh pulvinar, blandit metus a, pulvinar leo. Pellentesque nibh libero, suscipit sed felis eu, euismod ornare purus. Phasellus at euismod ex. Maecenas sollicitudin, diam vitae sodales vulputate, nunc risus mattis augue, malesuada bibendum purus eros at leo. Duis elit eros, condimentum id commodo ut, iaculis id nisl. Quisque quis tortor magna. In hac habitasse platea dictumst. Etiam consectetur enim vitae placerat dictum.
-        </p>
+         -->
       </article>
       <aside>
         <div class="social">
@@ -115,8 +164,8 @@ export default {
 .hero {
   position: relative;
   height: calc(400px);
-  padding: 0 $spacing-desktop;
-  margin-bottom: $spacing-desktop;
+  padding: 0 var(--spacing-desktop);
+  margin-bottom: var(--spacing-desktop);
   overflow: hidden;
   .background {
     display: flex;
@@ -135,17 +184,27 @@ export default {
 }
 
 .post {
-  padding: $spacing-desktop $spacing-desktop 140px $spacing-desktop;
+  padding: var(--spacing-desktop) var(--spacing-desktop) 140px var(--spacing-desktop);
   display: flex;
   flex-wrap: wrap;
   .header {
     width: 100%;
-    margin-bottom: $spacing-desktop;
+    margin-bottom: var(--spacing-desktop-s);
+    a {
+      color: $dark-gray;
+      border-bottom: 1px solid $lightest-gray;
+      &:hover {
+        border-bottom: 1px solid $light-gray;
+      }
+    }
   }
   article {
     width: calc(100% - 340px);
     font-size: 18px;
     line-height: 34px;
+    h3 {
+      margin-top: var(--spacing-desktop-2);
+    }
     p {
       margin: 20px 0;
       &:first-of-type {
@@ -160,15 +219,16 @@ export default {
       }
     }
     blockquote {
-      margin: $spacing-desktop 0 $spacing-desktop $spacing-desktop;
+      margin: var(--spacing-desktop) 0 var(--spacing-desktop) var(--spacing-desktop);
       color: $light-gray;
+      text-indent: -0.4em;
     }
     .video-container {
       position: relative;
       overflow: hidden;
       height: 0;
       padding-bottom: 56.25%;
-      margin: $spacing-desktop 0;
+      margin: var(--spacing-desktop) 0;
       iframe {
         position: absolute;
         top: 0;
@@ -179,7 +239,7 @@ export default {
     }
   }
   aside {
-    margin-left: $spacing-desktop;
+    margin-left: var(--spacing-desktop-s);
     width: 300px;
     color: $light-gray;
     h4 {
@@ -202,6 +262,37 @@ export default {
       &:last-of-type {
         margin-bottom: 0;
       };
+    }
+  }
+  @media (max-width: $breakpoint-xl) {
+    article {
+      width: calc(100% - 300px);
+    }
+    aside {
+      width: 260px;
+    }
+  }
+  @media (max-width: $breakpoint-l) {
+    article {
+      width: calc(100% - 240px);
+    }
+    aside {
+      width: 200px;
+    }
+  }
+  @media (max-width: $breakpoint-m) {
+    padding-bottom: 80px;
+    article {
+      width: 100%;
+      font-size: 16px;
+      line-height: 28px;
+      p {
+        margin: 20px 0;
+      }
+    }
+    aside {
+      width: 100%;
+      margin-top: var(--spacing-desktop-2);
     }
   }
 }

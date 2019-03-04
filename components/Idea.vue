@@ -2,11 +2,11 @@
   <div class="idea">
     <div class="image"></div>
     <div class="description">
-      <h4>Category</h4>
-      <h2>The Future of Agnostic Data</h2>
-      <h6>By Ben Haynes (via Medium) — January 15th, 2019</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper imperdiet magna vitae blandit. Mauris vestibulum felis eget leo efficitur dignissim. Ut bibendum sit amet mi a fermentum.</p>
-      <a href="#" class="h4" :class="color">Read More</a>
+      <h4>{{category}}</h4>
+      <h2>{{title}}</h2>
+      <h6>{{subtitle}}</h6>
+      <p>{{summary}}</p>
+      <a href="/post/test" class="h4" :class="color">Read More</a>
     </div>
   </div>
 </template>
@@ -14,21 +14,25 @@
 <script>
 export default {
   props: {
+    category: {
+      type: String,
+      default: 'Category'
+    },
     title: {
       type: String,
-      default: 'Google Search App'
+      default: 'The Future of Agnostic Data'
     },
     subtitle: {
       type: String,
-      default: 'Consulting'
+      default: 'By Ben Haynes (via Medium) — January 15th, 2019'
     },
-    logo: {
+    summary: {
       type: String,
-      default: 'Google Search App'
+      default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper imperdiet magna vitae blandit. Mauris vestibulum felis eget leo efficitur dignissim. Ut bibendum sit amet mi a fermentum.'
     },
-    large: {
-      type: Boolean,
-      default: false
+    image: {
+      type: String,
+      default: ''
     },
     color: {
       type: String,

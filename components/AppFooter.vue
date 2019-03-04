@@ -41,7 +41,7 @@
     <section>
       <div class="max-width">
         <a href="/"><logo color="lighter-gray" /></a>
-        <div>©2019 RANGER Studio LLC</div>
+        <div>©2019<span class="legal-name"> RANGER Studio LLC</span></div>
       </div>
     </section>
   </footer>
@@ -108,7 +108,7 @@ footer {
     @media (max-width: $breakpoint-m) {
       flex-wrap: wrap;
       & > a {
-        width: calc((100% - 40px) / 2);
+        width: calc((100% - 20px) / 2);
       }
     }
   }
@@ -121,6 +121,11 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    @media (max-width: $breakpoint-s) {
+      .legal-name {
+        display: none;
+      }
     }
   }
 }

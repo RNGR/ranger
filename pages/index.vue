@@ -60,7 +60,7 @@
     <hr>
     <section class="max-width">
       <h2 class="heading">Featured Product</h2>
-      <device color="blue" category="Headless CMS &amp; API" title="Directus Suite" subtitle="Directus is an open-source suite of software that instantly provides an API wrapper for SQL databases and an intuitive Admin App for non-technical users to manage content. Our innovative platform powers millions of websites, native apps, kiosks, IoT devices, enterprise ecosystems, and other data-driven applications around the world." button1title="Website" button1url="https://directus.io" button2title="Documentation" button2url="https://docs.directus.io">
+      <device color="blue" category="Headless CMS &amp; API" title="Directus Suite" subtitle="Directus is an open-source suite of software that instantly provides an API wrapper for SQL databases and an intuitive Admin App for non-technical users to manage content. Our innovative platform powers millions of websites, native apps, kiosks, IoT devices, enterprise ecosystems, and other data-driven applications around the world." button1title="Website" button1url="https://directus.io" button2title="Docs" button2url="https://docs.directus.io">
         <img src="/images/device-directus.svg">
       </device>
     </section>

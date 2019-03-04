@@ -19,6 +19,7 @@ export default {
 @import '~assets/scss/main.scss';
 
 .logo {
+  min-width: 157px;
   &.lighter-gray {
     path {
       fill: $lighter-gray;

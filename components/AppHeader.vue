@@ -12,7 +12,7 @@
           {{category}}
         </div>
       </div>
-      <a href="/"><logo /></a>
+      <a class="logo-toggle" href="/"><logo /></a>
     </div>
     <div class="fade" :style="{ opacity: opacity }"></div>
     <div class="menu">
@@ -180,7 +180,20 @@ header {
         transition: opacity $slow $transition;
         margin-left: var(--spacing-desktop);
         opacity: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(100vw - 350px);
+        @media (max-width: $breakpoint-m) {
+          width: calc(100vw - 297px);
+        }
+        @media (max-width: $breakpoint-s) {
+          width: calc(100vw - 277px);
+        }
       }
+    }
+    .logo-toggle {
+      text-align: right;
     }
   }
   .menu {

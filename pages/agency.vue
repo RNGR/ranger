@@ -13,7 +13,7 @@
       <div class="grid contact">
         <a href="mailto:info@rangerstudio.com">
           <h2>Email</h2>
-          <h4>info@rangerstudio.com</h4>
+          <h4>Info@rngr.org</h4>
         </a>
         <a href="tel:1-224-444-9666">
           <h2>Phone</h2>

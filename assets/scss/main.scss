@@ -93,7 +93,7 @@ a {
       flex-wrap: wrap;
       button,.button {
         width: 100%;
-        margin: 0 0 20px;
+        margin: 0 0 10px;
       }
     }
   }
@@ -120,7 +120,7 @@ button,.button {
   text-transform: uppercase;
   letter-spacing: -0.2px;
   height: 40px;
-  padding: 0 40px;
+  padding: 0 10px;
   outline: none;
   cursor: pointer;
   text-align: center;
@@ -219,7 +219,9 @@ hr {
     h4 {
       margin: 10px 0 10px;
     }
-    @media (max-width: $breakpoint-m) {
+  }
+  @media (max-width: $breakpoint-m) {
+    & > div {
       width: 100%;
     }
   }
@@ -233,6 +235,7 @@ hr {
   grid-gap: var(--spacing-desktop);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   &.contact {
+    grid-gap: var(--spacing-desktop-s);
     & > a {
       text-align: center;
       &:hover {

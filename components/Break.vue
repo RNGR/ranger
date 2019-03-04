@@ -112,7 +112,7 @@ export default {
       width: 100%;
       .max-width-half {
         h3 {
-          margin-top: 20px;
+          margin-top: 5px;
           line-height: 32px;
         }
       }

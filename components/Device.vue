@@ -143,11 +143,47 @@ export default {
   }
   @media (max-width: $breakpoint-m) {
     flex-wrap: wrap;
-    max-height: auto;
     height: auto;
-    .description,
+    max-height: none;
+    .description {
+      width: 100%;
+      padding-bottom: 0;
+    }
     .device {
       width: 100%;
+      height: 56.5vw;
+      text-align: center;
+      margin-bottom: var(--spacing-desktop);
+      img {
+        right: 50%;
+        top: 0;
+        height: 100%;
+        transform: translateX(50%);
+      }
+      svg {
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        // transform: translateX(26%);
+      }
+    }
+    &.reverse .device {
+      img {
+        right: auto;
+        left: 35%;
+        top: 0;
+        height: 100%;
+        transform: none;
+      }
+      svg {
+        right: auto;
+        left: 35%;
+        top: 0;
+        height: 100%;
+        width: auto;
+      }
     }
   }
 }
