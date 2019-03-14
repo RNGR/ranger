@@ -154,8 +154,8 @@ header {
         &:hover {
           .welcome,
           .work,
-          .agency,
-          .ideas {
+          .ideas,
+          .agency {
             animation-iteration-count: 1;
           }
           .welcome {
@@ -184,6 +184,7 @@ header {
         overflow: hidden;
         text-overflow: ellipsis;
         width: calc(100vw - 350px);
+        max-width: 1250px;
         @media (max-width: $breakpoint-m) {
           width: calc(100vw - 297px);
         }

@@ -86,10 +86,16 @@
       text="Instead of conforming to a strict methodology company-wide, we choose workflows that best suit the timeline and team. Our hybrid process hones-in on final deliverables through parallel phases of iterative sprints."
       link="See Agency Services"
       url="/agency#services" />
-    <section class="max-width-small">
+    <section v-if="posts.length" class="max-width-small">
       <h2 class="heading">Recent Articles</h2>
-      <idea />
-      <idea />
+      <idea v-for="post in posts" :key="post.id"
+        :id="post.id"
+        :category="post.category"
+        :title="post.title"
+        :subtitle="'By '+post.author+' — via '+post.source"
+        :summary="post.summary"
+        :image="post.hero.filename"
+         />
       <more text="See All Articles" url="/ideas#articles" />
     </section>
     <hr>
@@ -99,6 +105,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
 import Hero from '~/components/Hero.vue'
@@ -124,6 +131,15 @@ export default {
     Break,
     Idea,
     Quote
+  },
+  async asyncData() {
+    try {
+      const { data } = await axios.get('https://api.directus.cloud/dcShZiRsguP/items/posts?limit=3&fields=*.*.*')
+      return { posts: data.data }
+    } catch (e) {
+      error({ message: 'Post not found', statusCode: 404 })
+      return { posts: [] }
+    }
   }
 }
 </script>

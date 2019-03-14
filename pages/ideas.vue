@@ -9,16 +9,17 @@
       image="/images/nature-5.svg"
       title="Innovation is a mindset that arises from truly divergent thinking. Often captured as scribbled diagrams on sticky-notes and experimental code prototypes, this page is a collection of more formalized articles our staff has written on various publishing platforms."
       subtitle="This is also an annex for agency press, product release announcements, and even some helpful design and development tutorials. In short, it's a catch-all for relevant information we've created here or elsewhere." />
-    <section class="max-width">
+    <section class="max-width-small">
       <h2 class="heading">Articles &amp; News</h2>
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
-      <idea color="yellow" />
+      <idea v-for="post in posts" :key="post.id"
+        :id="post.id"
+        :category="post.category"
+        :title="post.title"
+        :subtitle="'By '+post.author+' — via '+post.source"
+        :summary="post.summary"
+        :image="post.hero.filename"
+        color="yellow"
+         />
     </section>
     <hr>
     <quote />
@@ -27,6 +28,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
 import Hero from '~/components/Hero.vue'
@@ -52,6 +54,10 @@ export default {
     Break,
     Idea,
     Quote
+  },
+  async asyncData() {
+    const { data } = await axios.get('https://api.directus.cloud/dcShZiRsguP/items/posts?fields=*.*.*')
+    return { posts: data.data }
   }
 }
 </script>

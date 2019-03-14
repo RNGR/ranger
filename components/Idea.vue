@@ -1,19 +1,27 @@
 <template>
-  <div class="idea">
-    <div class="image"></div>
-    <div class="description">
-      <h4>{{category}}</h4>
-      <h2>{{title}}</h2>
-      <h6>{{subtitle}}</h6>
-      <p>{{summary}}</p>
-      <a href="/post/test" class="h4" :class="color">Read More</a>
+  <a :href="'/posts/'+id">
+    <div class="idea">
+      <div class="background-container">
+        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcShZiRsguP/300/400/crop/better/' + image + ')' }"></div>
+      </div>
+      <div class="description">
+        <h4><a :href="'/posts/'+id">{{category}}</a></h4>
+        <h2><a :href="'/posts/'+id">{{title}}</a></h2>
+        <h6><a :href="'/posts/'+id">{{subtitle}}</a></h6>
+        <p>{{summary}}</p>
+        <span class="h4 read-more" :class="color">Read More</span>
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
 export default {
   props: {
+    id: {
+      type: Number,
+      default: 1
+    },
     category: {
       type: String,
       default: 'Category'
@@ -45,26 +53,57 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/scss/main.scss';
 
+a:hover {
+  .idea {
+    .background-container {
+      .background {
+        opacity: 0.8;
+      }
+    }
+    .description .read-more {
+      &.blue {
+        border-bottom: 2px solid $blue;
+      }
+      &.yellow {
+        border-bottom: 2px solid $yellow;
+      }
+    }
+  }
+}
 .idea {
   position: relative;
   margin: var(--spacing-desktop);
-  .image {
+  .background-container {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     width: calc((100% - 120px) / 4);
-    background-color: $lightest-gray;
+    background-color: $darkest-gray;
+    .background {
+      transition: all $fast $transition;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      opacity: 0.5;
+    }
   }
   .description {
     padding: var(--spacing-desktop);
     margin-left: calc((100% - 120px) / 4);
     max-width: 800px;
+    h2 {
+      display: inline-block;
+      padding-bottom: 6px;
+    }
     p {
       margin: var(--spacing-desktop) 0;
     }
-    a {
-      text-decoration: none;
+    .read-more {
+      transition: all $fast $transition;
+      border-bottom: 2px solid $white;
     }
   }
   @media (max-width: $breakpoint-m) {

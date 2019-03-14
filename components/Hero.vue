@@ -1,5 +1,5 @@
 <template>
-  <section class="hero max-width" :class="color">
+  <section class="hero max-width" :class="{color, missing}">
     <div class="background">
       <div class="info">
         <h4 id="hero-title" :class="color">{{category}}</h4>
@@ -46,6 +46,10 @@ export default {
     image: {
       type: String,
       default: '/images/nature-1.svg'
+    },
+    missing: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -93,6 +97,15 @@ export default {
       height: 80%;
       z-index: 1;
       opacity: 0.5;
+    }
+  }
+  &.missing {
+    .background {
+      & > img {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
   }
   @media (max-width: $breakpoint-m) {

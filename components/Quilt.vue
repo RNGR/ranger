@@ -1,11 +1,11 @@
 <template>
-  <section class="logo-quilt max-width">
-    <img src="/images/aol.svg" alt="Aol">
-    <img src="/images/att.svg" alt="AT&T">
-    <img src="/images/google.svg" alt="Google">
-    <img src="/images/hasbro.svg" alt="Hasbro">
-    <img src="/images/hp.svg" alt="HP">
-    <img src="/images/prada.svg" alt="Prada">
+  <section class="max-width logo-quilt">
+    <aol />
+    <att />
+    <google />
+    <hasbro />
+    <moma />
+    <prada />
   </section>
 </template>
 
@@ -14,14 +14,20 @@
 
 .logo-quilt {
   padding: 0 var(--spacing-desktop);
+  width: 100%;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  img {
-    margin: 0 10px var(--spacing-desktop);
+  margin-bottom: var(--spacing-desktop) !important;
+  svg {
+    width: 80%;
+    margin: 0 20px;
+    path {
+      fill: $lighter-gray;
+    }
   }
   @media (max-width: $breakpoint-l) {
     grid-template-columns: 1fr 1fr 1fr;

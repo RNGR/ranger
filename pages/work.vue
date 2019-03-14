@@ -17,7 +17,7 @@
       </device>
       <hr />
       <device color="green" category="Content-as-a-Service" title="Directus Cloud" subtitle="Powered by the all new Directus 7, we’ve completely reimagined our database on-demand platform. Spin up new projects in seconds, model your data however you'd like, and then connect it to your projects through our dynamic REST API. Pre-register now to join our private beta group — public release coming in Q2 2019." button1title="Pre-Register" button1url="https://directus.cloud/sign-up" button2title="Beta Login" button2url="https://directus.cloud/login" reverse="true">
-        <img src="/images/device-directus-cloud.svg">
+        <img src="/images/device-directus-cloud-full.svg">
       </device>
     </section>
     <hr>

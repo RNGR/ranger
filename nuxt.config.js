@@ -4,7 +4,7 @@ module.exports = {
   mode: 'universal',
 
   head: {
-    title: pkg.name,
+    title: 'RANGER Studio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,7 +21,7 @@ module.exports = {
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#263238' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Neuton:300' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Neuton:300,400' }
     ]
   },
 
@@ -70,9 +70,11 @@ module.exports = {
   },
 
   generate: {
-    routes: [
-      '/post/test'
-    ]
+    fallback: true,
+    fallback: '404.html'
+    // routes: [
+    //   '/posts/1'
+    // ]
   },
 
   /*
