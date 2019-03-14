@@ -1,5 +1,5 @@
 <template>
-  <div class="module" :class="{ large: large }">
+  <div class="module" :class="{ large: large, url: url }">
     <a :href="url" :target="target">
       <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }">
         <slot v-if="!image">
@@ -53,7 +53,10 @@ export default {
 
 .module {
   position: relative;
-  cursor: pointer;
+  cursor: default;
+  &.url {
+    cursor: pointer;
+  }
   &:after {
     content: '';
     display: block;
