@@ -95,6 +95,21 @@ export default {
       }
       a {
         text-decoration: none;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          &.blue {
+            border-bottom: 2px solid $blue;
+          }
+          &.yellow {
+            border-bottom: 2px solid $yellow;
+          }
+          &.red {
+            border-bottom: 2px solid $red;
+          }
+          &.blue {
+            border-bottom: 2px solid $blue;
+          }
+        }
       }
     }
   }
