@@ -17,7 +17,7 @@
     </div>
     <div class="device mobile" v-if="reverse">
       <slot></slot>
-      <svg width="370" height="668" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg width="370" height="668" viewBox="0 0 370 668" preserveAspectRatio="xMaxYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <path d="M57.8 0h.2a3 3 0 0 1 3 3v1.5c0 10 8.1 18 18 18h123.4c10 0 18-8 18-18V0H254a27.5 27.5 0 0 1 27.6 27.5V582a27.5 27.5 0 0 1-27.6 27.6H27.5A27.5 27.5 0 0 1 0 581.9V27.5A27.5 27.5 0 0 1 27.5 0h30.3z" id="a"/>
         </defs>
