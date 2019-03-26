@@ -51,10 +51,17 @@
       </aside>
     </section>
     <hr>
-    <section class="max-width">
+    <section class="related-articles max-width">
       <h2 class="heading">Related Articles</h2>
-      <idea color="blue" />
-      <idea color="blue" />
+      <idea v-for="related in related_posts" :key="related.related_id.id"
+        :id="related.related_id.id"
+        :category="related.related_id.category"
+        :title="related.related_id.title"
+        :subtitle="'By '+related.related_id.author+' — via '+related.related_id.source"
+        :summary="related.related_id.summary"
+        :image="related.related_id.hero.filename"
+        color="blue"
+         />
     </section>
     <hr>
     <quote />
@@ -89,9 +96,7 @@ export default {
   },
   async asyncData({ params, error }) {
     try {
-      const { data } = await axios.get(`https://api.directus.cloud/dcShZiRsguP/items/posts/${+params.id}?fields=*.*.*`)
-      console.log("test", "[");
-      console.log("meta",data.data);
+      const { data } = await axios.get(`https://api.directus.cloud/dcShZiRsguP/items/posts/${+params.id}?fields=related_posts.related_id.*.*,*.*.*`)
       return data.data
     } catch (e) {
       error({ message: 'Post not found', statusCode: 404 })
@@ -285,6 +290,9 @@ export default {
       margin-left: 0;
     }
   }
+}
+.related-articles {
+  margin-bottom: var(--spacing-desktop-2);
 }
 </style>
 
