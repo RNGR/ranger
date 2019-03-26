@@ -56,7 +56,7 @@ export default {
     Quote
   },
   async asyncData() {
-    const { data } = await axios.get('https://api.directus.cloud/dcShZiRsguP/items/posts?fields=*.*.*')
+    const { data } = await axios.get('https://api.directus.cloud/dcShZiRsguP/items/posts?filter[status][eq]=published&fields=*.*.*')
     return { posts: data.data }
   }
 }
