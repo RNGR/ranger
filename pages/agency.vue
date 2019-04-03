@@ -9,21 +9,40 @@
       image="/images/nature-6.svg"
       title="RANGER is a full-service digital agency working at the intersection of design and engineering. We believe that the best user-experiences come from a balance of experimentation, structure, innovation, prototyping, and exploring the fringe of emergent technology."
       subtitle="Located in New York City and New Haven, our multidisciplinary agency engages with clients around the world. We provide the creative and technical solutions essential to your project’s immediate success and long-term scalability." />
+
+    <div id="mc_embed_signup" v-if="newsletter">
+      <form action="https://getdirectus.us2.list-manage.com/subscribe/post?u=a0f804569c706d5fd9bb7281e&amp;id=a62e578439" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <!-- <label for="mce-EMAIL" class="h3">Enter your email address:</label> -->
+            <input type="email" value="" placeholder="Email address..." name="EMAIL" class="required email h3" id="mce-EMAIL">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a0f804569c706d5fd9bb7281e_a62e578439" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button h4"></div>
+          <div class="close h4" @click="toggleNewsletter">Close</div>
+        </div>
+      </form>
+    </div>
+
     <section class="max-width">
       <div class="grid contact">
-        <a href="mailto:info@rangerstudio.com">
+        <a href="mailto:info@rangerstudio.com" target="_blank">
           <h2>Email</h2>
           <h4>Info@rngr.org</h4>
         </a>
-        <a href="tel:1-224-444-9666">
+        <a href="tel:1-224-444-9666" target="_blank">
           <h2>Phone</h2>
           <h4>+1 224-444-9666</h4>
         </a>
-        <a href="https://twitter.com/directus" target="_blank">
+        <a href="https://twitter.com/ranger" target="_blank">
           <h2>Twitter</h2>
           <h4>@ranger</h4>
         </a>
-        <a href="mailto:info@rangerstudio.com">
+        <a class="newsletter-button" @click="toggleNewsletter">
           <h2>Newsletter</h2>
           <h4>Subscribe</h4>
         </a>
@@ -270,6 +289,7 @@ export default {
   },
   data() {
     return {
+      newsletter: false,
       career1: false,
       career2: false,
       career3: false,
@@ -277,6 +297,9 @@ export default {
     }
   },
   methods: {
+    toggleNewsletter() {
+      this.newsletter = !this.newsletter;
+    },
     toggleCareer1() {
       this.career1 = !this.career1;
     },
@@ -295,6 +318,52 @@ export default {
 
 <style lang="scss">
 @import '~assets/scss/main.scss';
+.newsletter-button {
+  cursor: pointer;
+}
+#mc_embed_signup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 20;
+  #mc_embed_signup_scroll {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: -100px;
+    input {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px 15px 15px;
+      outline: none;
+      border: 1px solid $lighter-gray;
+      border-radius: 3px;
+    }
+    input[type=submit] {
+      background-color: $darkest-gray;
+      color: $white;
+      border: none;
+      // margin-top: 15px;
+      padding: 10px 15px 10px;
+      height: auto;
+    }
+    .close {
+      margin-top: 15px;
+      text-align: center;
+      color: $gray;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        color: $darker-gray;
+      }
+    }
+  }
+}
 
 .careers {
   display: flex;
