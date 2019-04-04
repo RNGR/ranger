@@ -52,15 +52,15 @@
     <section class="max-width">
       <h2 class="heading">Brooklyn &amp; New Haven</h2>
       <div class="grid">
-        <module color="#607D8B" title="Brooklyn" subtitle="2014" image="/images/office-lounge-optimized.jpg" :large="true" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2013" image="/images/office-mural-optimized.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2012" image="/images/office-survival-optimized.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-desks.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2015" image="/images/office-lounge-open-optimized.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2017" image="/images/office-greenpoint-optimized.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2019" image="/images/office-greenpoint-board.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-lounge.jpg" />
-        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-shirts.jpg" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2014" image="/images/office-lounge-optimized.jpg" url="/images/office-lounge-optimized.jpg" target="_blank" :large="true" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2013" image="/images/office-mural-optimized.jpg" url="/images/office-mural-optimized.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2012" image="/images/office-survival-optimized.jpg" url="/images/office-survival-optimized.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-desks.jpg" url="/images/office-greenpoint-desks.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2015" image="/images/office-lounge-open-optimized.jpg" url="/images/office-lounge-open-optimized.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2017" image="/images/office-greenpoint-optimized.jpg" url="/images/office-greenpoint-optimized.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2019" image="/images/office-greenpoint-board.jpg" url="/images/office-greenpoint-board.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-lounge.jpg" url="/images/office-greenpoint-lounge.jpg" target="_blank" />
+        <module color="#607D8B" title="Brooklyn" subtitle="2018" image="/images/office-greenpoint-shirts.jpg" url="/images/office-greenpoint-shirts.jpg" target="_blank" />
       </div>
     </section>
     <section class="max-width-small">
