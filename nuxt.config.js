@@ -12,7 +12,13 @@ module.exports = {
       { name: 'apple-mobile-web-app-title', content: 'RANGER' },
       { name: 'application-name', content: 'RANGER' },
       { name: 'msapplication-TileColor', content: '#263238' },
-      { name: 'theme-color', content: '#cfd8dc' }
+      { name: 'theme-color', content: '#cfd8dc' },
+      { hid: 'og:title', property: 'og:title', content:'RANGER Studio — a full-service digital agency working at the intersection of design and engineering' },
+      { hid: 'og:site_name', property: 'og:site_name', content:'RANGER Studio' },
+      { hid: 'og:url', property: 'og:url', content:'https://rangerstudio.com' },
+      { hid: 'og:description', property: 'og:description', content:'Located in New York City and New Haven, our multidisciplinary agency engages with clients around the world. We provide the creative and technical solutions essential to your project’s immediate success and long-term scalability.' },
+      { hid: 'og:type', property: 'og:type', content:'website' },
+      { hid: 'og:image', property: 'og:image', content:'https://rngr.org/images/office-survival-optimized.jpg' }
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
