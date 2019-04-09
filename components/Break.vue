@@ -59,7 +59,7 @@ export default {
   display: flex;
   background-color: $darkest-gray;
   color: $white;
-  align-items: center;
+  align-items: stretch;
   margin-top: var(--spacing-desktop-2);
   &.reverse {
     flex-direction: row-reverse;
@@ -69,8 +69,9 @@ export default {
   }
   .image {
     width: 50%;
-    height: 50vw;
+    height: auto;
     max-height: 800px;
+    min-height: 50vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 10%;
@@ -80,6 +81,7 @@ export default {
     padding: var(--spacing-desktop-s) var(--spacing-desktop);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     .max-width-half {
       max-width: 620px;
       h2 {
@@ -122,9 +124,13 @@ export default {
     .image {
       width: 100%;
       height: 100vw;
+      max-height: 400px;
     }
     .description {
       width: 100%;
+      justify-content: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
       .max-width-half {
         h3 {
           margin-top: 5px;

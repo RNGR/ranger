@@ -108,13 +108,8 @@ a:hover {
   }
   @media (max-width: $breakpoint-m) {
     margin: var(--spacing-desktop-s) 0;
-    .image {
-      position: relative;
-      top: auto;
-      left: auto;
-      bottom: auto;
-      width: 100%;
-      padding-bottom: 50%;
+    .background-container {
+      display: none;
     }
     .description {
       padding: var(--spacing-desktop);
