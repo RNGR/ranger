@@ -96,7 +96,7 @@ export default {
   },
   async asyncData({ params, error }) {
     try {
-      const { data } = await axios.get(`https://api.directus.cloud/dcShZiRsguP/items/posts/${+params.id}?fields=related_posts.related_id.*.*,*.*.*`)
+      const { data } = await axios.get(`https://api.directus.cloud/dcdBrg_0chy/items/posts/${+params.id}?fields=related_posts.related_id.*.*,*.*.*`)
       return data.data
     } catch (e) {
       error({ message: 'Post not found', statusCode: 404 })
