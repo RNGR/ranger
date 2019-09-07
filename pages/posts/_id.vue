@@ -12,7 +12,7 @@
       <div class="header">
         <h4 id="hero-title">{{category}}</h4>
         <h2>{{title}}</h2>
-        <h6>By {{author}} — via <a :href="source_url">{{source}}</a></h6>
+        <h6>By {{author}}<span v-if="source"> — via <a :href="source_url">{{source}}</a></span></h6>
       </div>
       <article v-html="body"></article>
       <aside>
@@ -50,8 +50,8 @@
         </div>
       </aside>
     </section>
-    <hr>
-    <section class="related-articles max-width">
+    <hr v-if="related_posts.length > 0">
+    <section v-if="related_posts.length > 0" class="related-articles max-width">
       <h2 class="heading">Related Articles</h2>
       <idea v-for="related in related_posts" :key="related.related_id.id"
         :id="related.related_id.id"

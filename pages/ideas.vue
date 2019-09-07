@@ -15,7 +15,7 @@
         :id="post.id"
         :category="post.category"
         :title="post.title"
-        :subtitle="'By '+post.author+' — via '+post.source"
+        :subtitle="subtitle(post.author,post.source)"
         :summary="post.summary"
         :image="post.hero.filename"
         color="yellow"
@@ -56,8 +56,17 @@ export default {
     Quote
   },
   async asyncData() {
-    const { data } = await axios.get('https://api.directus.cloud/dcdBrg_0chy/items/posts?filter[status][eq]=published&fields=*.*.*')
+    const { data } = await axios.get('https://api.directus.cloud/dcdBrg_0chy/items/posts?filter[status][eq]=published&fields=*.*.*&sort=-publish_date')
     return { posts: data.data }
+  },
+  methods: {
+    subtitle: function (author, source) {
+      if (source){
+        return 'By '+author+' — via '+source
+      } else {
+        return 'By '+author+''
+      }
+    }
   }
 }
 </script>
