@@ -5,9 +5,9 @@
         <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcdBrg_0chy/300/400/crop/better/' + image + ')' }"></div>
       </div>
       <div class="description">
-        <h4><a :href="'/posts/'+id">{{category}}</a></h4>
-        <h2><a :href="'/posts/'+id">{{title}}</a></h2>
-        <h6><a :href="'/posts/'+id">{{subtitle}}</a></h6>
+        <h4>{{category}}</h4>
+        <h2>{{title}}</h2>
+        <h6>{{subtitle}}</h6>
         <p>{{summary}}</p>
         <span class="h4 read-more" :class="color">Read More</span>
       </div>
@@ -20,7 +20,7 @@ export default {
   props: {
     id: {
       type: Number,
-      default: 1
+      default: null
     },
     category: {
       type: String,

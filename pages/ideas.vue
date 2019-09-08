@@ -19,7 +19,7 @@
         :summary="post.summary"
         :image="post.hero.filename"
         color="yellow"
-         />
+     />
     </section>
     <hr>
     <quote />
