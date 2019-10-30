@@ -36,6 +36,11 @@ export default {
           quote: "We couldn't be happier with RANGER. The precision, professionalism, and quality of work is far beyond any other digital studios we've worked with. We feel so lucky to have you as our partner.",
           title: "Natasha Jen",
           subtitle: "Pentagram — Partner"
+        },
+        {
+          quote: "Ben and the RANGER team are great: nimble, efficient and highly collaborative. They were able to clarify a technically complex project and worked seamlessly with our creative team to bring an ambitious vision to life.",
+          title: "Claire Banks",
+          subtitle: "Gretel — Project Manager"
         }
       ],
       quoteRandom: {}
