@@ -2,7 +2,7 @@
   <a :href="'/posts/'+id">
     <div class="idea">
       <div class="background-container">
-        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcdBrg_0chy/300/400/crop/better/' + image + ')' }"></div>
+        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcKFa5YXThieN2Sl/300/400/crop/better/' + image + ')' }"></div>
       </div>
       <div class="description">
         <h4>{{category}}</h4>

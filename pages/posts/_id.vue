@@ -5,7 +5,7 @@
       color="gray" />
     <section class="hero max-width">
       <div class="background-container">
-        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcdBrg_0chy/1500/400/crop/better/' + hero.filename + ')' }"></div>
+        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcKFa5YXThieN2Sl/1500/400/crop/better/' + hero.filename + ')' }"></div>
       </div>
     </section>
     <section class="post max-width-article">
@@ -96,7 +96,7 @@ export default {
   },
   async asyncData({ params, error }) {
     try {
-      const { data } = await axios.get(`https://api.directus.cloud/dcdBrg_0chy/items/posts/${+params.id}?fields=related_posts.related_id.*.*,*.*.*`)
+      const { data } = await axios.get(`https://api.directus.cloud/dcKFa5YXThieN2Sl/items/posts/${+params.id}?fields=related_posts.related_id.*.*,*.*.*`)
       return data.data
     } catch (e) {
       error({ message: 'Post not found', statusCode: 404 })
