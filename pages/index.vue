@@ -70,7 +70,7 @@
       <div class="grid">
         <module color="#039BE5" title="Google Search App" subtitle="Concepting"><google /></module>
         <module color="#E91E63" title="AOL Artists" subtitle="Website"><aol /></module>
-        <module color="#FFC107" title="Kaiyo" subtitle="Website" :large="true"><kaiyo /></module>
+        <module color="#FFEB3B" title="Snapchat Spectacles" subtitle="Website" :large="true"><snapchat /></module>
         <module color="#4CAF50" title="ACLU Uncovery" subtitle="Website"><aclu /></module>
         <module color="#263238" title="Pradasphere" subtitle="Website"><prada /></module>
         <module color="#FFEB3B" title="SoulCycle" subtitle="Full Ecosystem"><soulcycle /></module>

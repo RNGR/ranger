@@ -42,9 +42,11 @@ import ps212 from '../components/svg/ps212.vue'
 import quartz from '../components/svg/quartz.vue'
 import redscout from '../components/svg/redscout.vue'
 import sasaki from '../components/svg/sasaki.vue'
+import snapchat from '../components/svg/snapchat.vue'
 import soulcycle from '../components/svg/soulcycle.vue'
 import theislandhouse from '../components/svg/theislandhouse.vue'
 import themill from '../components/svg/themill.vue'
+import thenewschool from '../components/svg/thenewschool.vue'
 import usgov from '../components/svg/usgov.vue'
 import twobyfour from '../components/svg/twobyfour.vue'
 import wb from '../components/svg/wb.vue'
@@ -93,9 +95,11 @@ Vue.component('ps212', ps212)
 Vue.component('quartz', quartz)
 Vue.component('redscout', redscout)
 Vue.component('sasaki', sasaki)
+Vue.component('snapchat', snapchat)
 Vue.component('soulcycle', soulcycle)
 Vue.component('theislandhouse', theislandhouse)
 Vue.component('themill', themill)
+Vue.component('thenewschool', thenewschool)
 Vue.component('usgov', usgov)
 Vue.component('twobyfour', twobyfour)
 Vue.component('wb', wb)

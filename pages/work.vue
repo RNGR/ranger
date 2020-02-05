@@ -27,12 +27,12 @@
       <div class="grid">
 
         <module color="#039be5" title="Google Search App" subtitle="Consulting"><google /></module>
-        <module color="#E91E63" title="Aol Artists" subtitle="Website"><aol /></module>
+        <module color="#FFEB3B" title="Snapchat Spectacles" subtitle="Website"><snapchat /></module>
         <module color="#9C27B0" title="AT&T Performing Arts Center" subtitle="3D Digital Installation" :large="true"><att /></module>
         <module color="#FFEB3B" title="SoulCycle" subtitle="Website & Ecosystem"><soulcycle /></module>
         <module color="#263238" title="Pradasphere" subtitle="Website"><prada /></module>
         <module color="#039be5" title="HP Global Citizenship Report" subtitle="Website"><hp /></module>
-        <module color="#FFC107" title="Kaiyo" subtitle="Website"><kaiyo /></module>
+        <module color="#E91E63" title="Aol Artists" subtitle="Website"><aol /></module>
         <module color="#3F51B5" title="ACLU Uncovery" subtitle="Website"><aclu /></module>
         <module color="#f44336" title="PS212" subtitle="Website"><ps212 /></module>
         <module color="#4CAF50" title="Chrome Web Lab" subtitle="Experimental Website" :large="true"><google /></module>
@@ -76,6 +76,8 @@
         <module color="#212121" title="Bernard Tschumi Architects" subtitle="Website"><bta /></module>
         <module color="#3F51B5" title="365 Days 365 Plays" subtitle="Website"><yale /></module>
         <module color="#8BC34A" title="RedScout" subtitle="Website"><redscout /></module>
+        <module color="#FFC107" title="Kaiyo" subtitle="Website"><kaiyo /></module>
+        <module color="#FFC107" title="The New School" subtitle="Website"><thenewschool /></module>
 
         <!--
         Steven Holl Architects
