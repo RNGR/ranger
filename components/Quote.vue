@@ -39,8 +39,8 @@ export default {
         },
         {
           quote: "Ben and the RANGER team are great: nimble, efficient and highly collaborative. They were able to clarify a technically complex project and worked seamlessly with our creative team to bring an ambitious vision to life.",
-          title: "Claire Banks",
-          subtitle: "Gretel — Project Manager"
+          title: "Ryan Moore",
+          subtitle: "Gretel — Executive Creative Director, Partner"
         }
       ],
       quoteRandom: {}
