@@ -162,12 +162,16 @@
       <h2 class="heading">Partner Agencies</h2>
       <div class="grid">
         <module color="#607D8B" title="2×4" subtitle="Since 2011" url="https://2x4.org/" target="_blank"><twobyfour /></module>
+        <module color="#000000" title="Avec" subtitle="Since 2011" url="http://www.avec.us/" target="_blank"><avec /></module>
         <module color="#009688" title="Celery Design" subtitle="Since 2011" url="http://www.celerydesign.com/" target="_blank"><celery /></module>
         <module title="Google Creative Lab" subtitle="Since 2011" url="https://about.google" target="_blank"><google /></module>
+        <module color="#000000" title="Gretel" subtitle="Since 2019" url="https://gretelny.com/" target="_blank"><gretel /></module>
         <module color="#FFEB3B" title="IDEO" subtitle="Since 2012" url="https://www.ideo.com/" target="_blank"><ideo /></module>
         <module color="#F44336" title="Interbrand" subtitle="Since 2013" url="https://www.interbrand.com/" target="_blank"><interbrand /></module>
+        <module color="#734AD6" title="Monospace" subtitle="Since 2020" url="https://monospace.io/" target="_blank"><monospace /></module>
         <module color="#F44336" title="Pentagram" subtitle="Since 2012" url="https://www.pentagram.com/" target="_blank"><pentagram /></module>
         <module color="#607D8B" title="Project Projects" subtitle="Since 2011" url="http://www.projectprojects.com/" target="_blank"><projectprojects /></module>
+        <module color="#F44336" title="PS212" subtitle="Since 2018" url="https://www.ps212.com/" target="_blank"><ps212 /></module>
         <module color="#FFEB3B" title="Wolff Olins" subtitle="Since 2011" url="https://www.wolffolins.com/" target="_blank"><wolffolins /></module>
       </div>
     </section>

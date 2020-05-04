@@ -16,7 +16,7 @@
         <img src="/images/device-directus.svg">
       </device>
       <hr />
-      <device color="green" category="Content-as-a-Service" title="Directus Cloud" subtitle="Powered by the all new Directus 7, we’ve completely reimagined our database on-demand platform. Spin up new projects in seconds, model your data however you'd like, and then connect it to your projects through our dynamic REST API. Pre-register now to join our private beta group — public release coming in Q2 2019." button1title="Pre-Register" button1url="https://directus.cloud/sign-up" button2title="Beta Login" button2url="https://directus.cloud/login" reverse="true">
+      <device color="green" category="Content-as-a-Service" title="Directus Cloud" subtitle="Powered by the all new Directus 8, we’ve completely reimagined our database on-demand platform. Spin up new projects in seconds, model your data however you'd like, and then connect it to your projects through our dynamic REST API. Register now to reserve your account." button1title="Register" button1url="https://directus.cloud/sign-up" button2title="Sign In" button2url="https://dashboard.directus.cloud/register" reverse>
 
       </device>
     </section>
@@ -77,7 +77,11 @@
         <module color="#3F51B5" title="365 Days 365 Plays" subtitle="Website"><yale /></module>
         <module color="#8BC34A" title="RedScout" subtitle="Website"><redscout /></module>
         <module color="#FFC107" title="Kaiyo" subtitle="Website"><kaiyo /></module>
-        <module color="#FFC107" title="The New School" subtitle="Website"><thenewschool /></module>
+        <module color="#f44336" title="The New School" subtitle="Website"><thenewschool /></module>
+        <module color="#734AD6" title="Monospace" subtitle="Branding" :large="true"><monospacealt /></module>
+        <module color="#FF6C2C" title="NextHome" subtitle="Website"><nexthome /></module>
+        <module color="#000000" title="NewView Capital" subtitle="Website"><newviewcap /></module>
+
 
         <!--
         Steven Holl Architects

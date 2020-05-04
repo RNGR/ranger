@@ -4,6 +4,7 @@ import aclu from '../components/svg/aclu.vue'
 import aol from '../components/svg/aol.vue'
 import aro from '../components/svg/aro.vue'
 import artis from '../components/svg/artis.vue'
+import avec from '../components/svg/avec.vue'
 import assouline from '../components/svg/assouline.vue'
 import atp from '../components/svg/atp.vue'
 import att from '../components/svg/att.vue'
@@ -20,6 +21,7 @@ import frank from '../components/svg/frank.vue'
 import free from '../components/svg/free.vue'
 import forcemajeure from '../components/svg/forcemajeure.vue'
 import google from '../components/svg/google.vue'
+import gretel from '../components/svg/gretel.vue'
 import hasbro from '../components/svg/hasbro.vue'
 import hp from '../components/svg/hp.vue'
 import i2 from '../components/svg/i2.vue'
@@ -29,7 +31,11 @@ import jaaf from '../components/svg/jaaf.vue'
 import juilliard from '../components/svg/juilliard.vue'
 import kaiyo from '../components/svg/kaiyo.vue'
 import moma from '../components/svg/moma.vue'
+import monospace from '../components/svg/monospace.vue'
+import monospacealt from '../components/svg/monospace-alt.vue'
 import newvue from '../components/svg/newvue.vue'
+import newviewcap from '../components/svg/newviewcap.vue'
+import nexthome from '../components/svg/nexthome.vue'
 import nyit from '../components/svg/nyit.vue'
 import oribe from '../components/svg/oribe.vue'
 import pamm from '../components/svg/pamm.vue'
@@ -57,6 +63,7 @@ Vue.component('aclu', aclu)
 Vue.component('aol', aol)
 Vue.component('aro', aro)
 Vue.component('artis', artis)
+Vue.component('avec', avec)
 Vue.component('assouline', assouline)
 Vue.component('atp', atp)
 Vue.component('att', att)
@@ -73,6 +80,7 @@ Vue.component('frank', frank)
 Vue.component('free', free)
 Vue.component('forcemajeure', forcemajeure)
 Vue.component('google', google)
+Vue.component('gretel', gretel)
 Vue.component('hasbro', hasbro)
 Vue.component('hp', hp)
 Vue.component('i2', i2)
@@ -82,7 +90,11 @@ Vue.component('jaaf', jaaf)
 Vue.component('juilliard', juilliard)
 Vue.component('kaiyo', kaiyo)
 Vue.component('moma', moma)
+Vue.component('monospace', monospace)
+Vue.component('monospacealt', monospacealt)
 Vue.component('newvue', newvue)
+Vue.component('newviewcap', newviewcap)
+Vue.component('nexthome', nexthome)
 Vue.component('nyit', nyit)
 Vue.component('oribe', oribe)
 Vue.component('pamm', pamm)
