@@ -17,7 +17,7 @@
         :title="post.title"
         :subtitle="subtitle(post.author,post.source)"
         :summary="post.summary"
-        :image="post.hero.filename"
+        :image="post.hero.private_hash"
         color="yellow"
      />
     </section>

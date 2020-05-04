@@ -5,7 +5,7 @@
       color="gray" />
     <section class="hero max-width">
       <div class="background-container">
-        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/thumbnail/dcKFa5YXThieN2Sl/1500/400/crop/better/' + hero.filename + ')' }"></div>
+        <div class="background" :style="{ 'background-image': 'url(https://api.directus.cloud/dcKFa5YXThieN2Sl/assets/' + hero.private_hash + '?key=detail)' }"></div>
       </div>
     </section>
     <section class="post max-width-article">

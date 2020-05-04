@@ -94,7 +94,7 @@
         :title="post.title"
         :subtitle="'By '+post.author+' — via '+post.source"
         :summary="post.summary"
-        :image="post.hero.filename"
+        :image="post.hero.private_hash"
          />
       <more text="See All Articles" url="/ideas#articles" />
     </section>
