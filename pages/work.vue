@@ -16,7 +16,7 @@
         <img src="/images/device-directus.svg">
       </device>
       <hr />
-      <device color="green" category="Content-as-a-Service" title="Directus Cloud" subtitle="Powered by the all new Directus 8, we’ve completely reimagined our database on-demand platform. Spin up new projects in seconds, model your data however you'd like, and then connect it to your projects through our dynamic REST API. Register now to reserve your account." button1title="Register" button1url="https://directus.cloud/sign-up" button2title="Sign In" button2url="https://dashboard.directus.cloud/register" reverse>
+      <device color="green" category="Content-as-a-Service" title="Directus Cloud" subtitle="Powered by the all new Directus 9, we’ve completely reimagined our database on-demand platform. Spin up new projects in seconds, model your data however you'd like, and then connect it to your projects through our dynamic REST and GraphQL API. Register now to create your free project." button1title="Register" button1url="https://directus.cloud/register" button2title="Sign In" button2url="https://directus.cloud/login" reverse>
 
       </device>
     </section>
